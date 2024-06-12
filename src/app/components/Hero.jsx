@@ -3,13 +3,13 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
-import HeroImageSrc from "../../../public/assets/hero/HeroSection2.jpeg";
-import {
-    RiArrowDownSLine
-} from "react-icons/ri";
 import HeroImage from "./HeroImage";
 // import Badge from "./Badge";
 import Socials from "./Socials.jsx";
+
+import {
+    RiArrowDownSLine
+} from "react-icons/ri";
 
 const Hero = ({theme}) => {
   return (
@@ -19,13 +19,13 @@ const Hero = ({theme}) => {
             <div className="flex justify-between gap-x-8">
                 {/*text*/}
                 <div className="flex max-w[600px] flex-col justify-center mx-auto xl:mx-8
-                 text-center xl:text-left">
+                 text-center xl:text-center">
                     <div className="text-sm uppercase font-semibold mb-4 text-primary
-                     tracking-[4px]">Welcome to O'Beauty Collections
+                     tracking-[4px]">Welcome to O&apos;Beauty Collections
                      </div> 
-                    <h2 className="h1 mb-4">O'Beauty Collections</h2>
+                    <h2 className="h1 mb-4">O&apos;Beauty Collections</h2>
                     <p className="subtitle max-w-[490px] mx-auto xl:mx-0"> 
-                    Elevate your beauty with O'Beauty Collections, where every blink tells a story. 
+                    Elevate your beauty with O&apos;Beauty Collections, where every blink tells a story. 
                     Discover luxurious lashes that captivate and enhance your natural allure
                     </p>
                     {/*buttons*/}
@@ -50,7 +50,7 @@ const Hero = ({theme}) => {
                     <div className=" w-[500px] h-[500px] 
                     -top-1 -right-2 bg-no-repeat absolute"></div>
                     <HeroImage containerStyles=" w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
-                    imgSrc={HeroImageSrc}
+                    imgSrc="/assets/hero/HeroSection2.jpeg"
                     />
                 </div> 
             </div>
@@ -63,4 +63,4 @@ const Hero = ({theme}) => {
   )
 }
 
-export default Hero
+export default Hero;
