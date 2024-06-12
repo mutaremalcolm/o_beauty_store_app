@@ -5,9 +5,6 @@ import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
 import HeroImageSrc from "../../../public/assets/hero/HeroSection2.jpeg";
 import {
-    RiBriefcase4Fill,
-    RiTeamFill,
-    RiTodoFill,
     RiArrowDownSLine
 } from "react-icons/ri";
 import HeroImage from "./HeroImage";
