@@ -4,9 +4,9 @@ import ShoppingCart from './ShoppingCart';
 
 const links = [
     { id: 'home', name: 'Home' },
-    { id: 'projects', name: 'Lashes' },
-    { id: 'projects', name: 'Serum' },
-    { id: 'projects', name: 'Wax Sticks' },
+    { id: 'shop', name: 'Shop' },
+    { id: 'reviews', name: 'Reviews' },
+    { id: 'about us', name: 'About Us' },
     { id: 'contact', name: 'Contact' }
 ];
 

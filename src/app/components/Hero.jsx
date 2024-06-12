@@ -10,7 +10,7 @@ const Hero = ({theme}) => {
   return (
     <section
       id="home"
-      className="py-12 xl:py-24 h-[84vh] xl:pt-28 mb-20 relative bg-cover bg-center"
+      className="py-12 xl:py-24 h-[84vh] xl:pt-28 mb-10 relative bg-cover bg-center"
       style={{ backgroundImage: "url('/assets/hero/heroImage.jpeg')" }}
     >
       <div className="container mx-auto h-full flex items-center justify-center">
