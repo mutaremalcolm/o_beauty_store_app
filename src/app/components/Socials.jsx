@@ -11,15 +11,15 @@ import Link from "next/link";
 
 const icons = [
   {
-    path: "https://www.linkedin.com/in/malcolm-mutare-a234a61aa/",
+    path: "https://www.instagram.com/obeautycollections?igsh=dWU5b3hhcXgweDBk",
     name: <RiInstagramFill />
   },
   {
-    path: "https://github.com/mutaremalcolm",
+    path: "",
     name: <RiFacebookFill />
   },
   {
-    path: "https://twitter.com/MalcolmTech",
+    path: "https://x.com/OBeautyCoLL",
     name: <RiTwitterFill />
   },
 ]
