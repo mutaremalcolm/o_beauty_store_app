@@ -44,7 +44,7 @@ const AboutUs = () => {
                     {servicesData.map((item, index) => (
                         <Card className="w-full max-w-[424px] flex flex-col pt-16 pb-10 justify-center items-center relative border-2 border-pink-600" key={index}>
                             <CardHeader className="text-primary absolute -top-[60px]">
-                                <div className="w-[140px] h-[80px] bg-white dark:bg-background flex justify-center items-center relative">
+                                <div className="w-[140px] h-[80px] bg-pink-200 dark:bg-background flex justify-center items-center relative">
                                     {item.icon}
                                 </div>
                             </CardHeader>

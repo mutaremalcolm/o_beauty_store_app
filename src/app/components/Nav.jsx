@@ -13,7 +13,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
     const navRef = useRef(null);
 
     const scrollToSection = (id, event) => {
-        event.preventDefault(); 
+        event.preventDefault();
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });

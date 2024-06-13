@@ -1,36 +1,37 @@
-import Link from "next/link";
+"use client"
+
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { ShoppingCart } from "lucide-react";
+import { useCart } from '../contexts/cartContext';
 
 const ShopCard = ({ product }) => {
+    const { addToCart } = useCart();
+
     return (
         <Card className="group overflow-hidden relative border-2 border-pink-600">
             <CardHeader className="p-0">
-                {/* Product Image */}
                 <div className="relative w-full h-[300px]">
                     <Image
                         className="object-cover w-full h-full"
                         src={product.image}
                         width={500}
                         height={300}
-                        alt=""
+                        alt={product.title}
                     />
-                    {/* Add to Cart Button */}
-                    <div className="absolute top-4 right-4 bg-primary text-white flex items-center justify-center w-10 h-10 rounded-full">
+                    <button
+                        onClick={() => addToCart(product)}
+                        className="absolute top-4 right-4 bg-primary text-white flex items-center justify-center w-10 h-10 rounded-full transition-opacity duration-300"
+                    >
                         <ShoppingCart size={20} />
-                    </div>
+                    </button>
                 </div>
             </CardHeader>
             <CardContent className="p-6">
-                {/* Product Title */}
                 <CardTitle className="font-semibold text-xl mb-4">{product.title}</CardTitle>
-                {/* Product Description */}
                 <CardDescription className="text-muted-foreground">{product.description}</CardDescription>
-                {/* Product Price */}
                 <div className="flex items-center mt-4">
                     <span className="font-semibold text-primary">{product.price}</span>
-                    {/* Product Rating */}
                     <div className="ml-auto flex items-center">
                         <span className="text-xs text-primary mr-1">{product.rating}</span>
                         <svg

@@ -78,6 +78,10 @@
   .badge {
     @apply z-10 w-[200px] h-[68px] bg-white dark:backdrop-blur-[44px] shadow-2xl p-4 rounded-[10px] flex items-center gap-x-4;
   }
+
+  .section-title {
+    @apply text-4xl font-bold mb-6 text-center mx-auto;
+  }
 }
 
 @layer utilities {
@@ -86,3 +90,6 @@
     @apply bg-primary;
   }
 }
+
+
+
