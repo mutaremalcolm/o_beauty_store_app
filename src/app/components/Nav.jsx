@@ -1,19 +1,19 @@
 import { useRef } from 'react';
 import { motion } from 'framer-motion';
-import ShoppingCart from './ShoppingCart';
 
 const links = [
     { id: 'home', name: 'Home' },
+    { id: 'about-us', name: 'About Us' },
     { id: 'shop', name: 'Shop' },
-    { id: 'reviews', name: 'Reviews' },
-    { id: 'about us', name: 'About Us' },
+    { id: 'reviews', name: 'Reviews' }, 
     { id: 'contact', name: 'Contact' }
 ];
 
 const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
     const navRef = useRef(null);
 
-    const scrollToSection = (id) => {
+    const scrollToSection = (id, event) => {
+        event.preventDefault(); 
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
@@ -27,7 +27,7 @@ const Nav = ({ containerStyles, linkStyles, underlineStyles }) => {
                     key={index}
                     href={`#${link.id}`}
                     className={`capitalize ${linkStyles}`}
-                    onClick={() => scrollToSection(link.id)}
+                    onClick={(event) => scrollToSection(link.id, event)}
                 >
                     {link.name}
                     <motion.span

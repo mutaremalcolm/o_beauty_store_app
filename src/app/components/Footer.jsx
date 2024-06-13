@@ -2,7 +2,7 @@ import Socials from "./Socials"
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary py-12">
+    <footer className="bg-pink-100 py-12">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-between">
           {/* socials */}
@@ -13,7 +13,7 @@ const Footer = () => {
           {/* copyright */}
 
           <div className="text-muted-foreground">
-            Copyright &copy; Made with Love By Malcolm Mutare. All Rights Reserved.
+            Copyright &copy; Made with Love @Digi-Drip. All Rights Reserved.
           </div>
         </div>
       </div>
