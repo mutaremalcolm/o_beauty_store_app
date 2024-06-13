@@ -30,8 +30,8 @@ const Shop = () => {
     ];
 
     return (
-        <section className="container mx-auto py-12">
-            <h2 className="text-3xl font-bold mb-6">Shop Our Products</h2>
+        <section className="container mx-auto py-20">
+            <h2 className="text-center text-3xl font-bold mb-6">Shop Our Products</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {products.map((product) => (
                     <ShopCard key={product.id} product={product} />

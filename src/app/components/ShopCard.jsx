@@ -5,7 +5,7 @@ import { ShoppingCart } from "lucide-react";
 
 const ShopCard = ({ product }) => {
     return (
-        <Card className="group overflow-hidden relative">
+        <Card className="group overflow-hidden relative border-2 border-pink-600">
             <CardHeader className="p-0">
                 {/* Product Image */}
                 <div className="relative w-full h-[300px]">
@@ -17,7 +17,7 @@ const ShopCard = ({ product }) => {
                         alt=""
                     />
                     {/* Add to Cart Button */}
-                    <div className="absolute top-4 right-4 bg-primary text-white flex items-center justify-center w-10 h-10 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute top-4 right-4 bg-primary text-white flex items-center justify-center w-10 h-10 rounded-full">
                         <ShoppingCart size={20} />
                     </div>
                 </div>

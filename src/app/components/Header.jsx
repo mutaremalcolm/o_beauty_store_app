@@ -6,7 +6,6 @@ import Nav from "./Nav";
 import ShoppingCart from "./ShoppingCart"
 import logo from "../../../public/assets/header/Logo.jpg"; 
 // import MobileNav from "./MobileNav";
-// import ThemeToggler from "./ThemeToggler";
 import { usePathname } from "next/navigation"; 
 
 const Header = () => {
@@ -28,8 +27,8 @@ const Header = () => {
     return (
         <header
             className={`${
-                header ? 'py-4 bg-white shadow-lg dark:bg-accent' : 'py-6 dark:bg-transparent'
-            } sticky top-0 z-30 transition-all ${pathname === '/' ? 'bg-[#fef9f5]' : ''}`}
+                header ? 'py-4 bg-pink-100 shadow-lg dark:bg-accent' : 'py-6 dark:bg-transparent'
+            } sticky top-0 z-30 transition-all ${pathname === '/' ? 'bg-pink-100' : ''}`}
         >
             <div className="container mx-auto">
                 <div className="flex justify-between items-center">
@@ -42,7 +41,6 @@ const Header = () => {
                             underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
                         />
                         <ShoppingCart />
-                        {/* <ThemeToggler /> */}
                         {/* mobile nav */}
                         <div className="xl:hidden">
                             {/* <MobileNav /> */}
