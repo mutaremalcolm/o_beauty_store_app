@@ -1,6 +1,7 @@
 "use client"
 
 import { useCart } from '../contexts/cartContext';
+import Image from 'next/image';
 
 const Cart = () => {
     const { cart } = useCart();
