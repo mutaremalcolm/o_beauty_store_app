@@ -3,9 +3,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image"; 
 import Nav from "./Nav";
-import ShoppingCart from "./ShoppingCart"
+import Cart from "./Cart";
 import logo from "../../../public/assets/header/Logo.jpg"; 
-// import MobileNav from "./MobileNav";
 import { usePathname } from "next/navigation"; 
 
 const Header = () => {
@@ -40,11 +39,7 @@ const Header = () => {
                             linkStyles="relative hover:text-primary transition-all"
                             underlineStyles="absolute left-0 top-full h-[2px] bg-primary w-full"
                         />
-                        <ShoppingCart />
-                        {/* mobile nav */}
-                        <div className="xl:hidden">
-                            {/* <MobileNav /> */}
-                        </div>
+                        <Cart height={40} width={40}/>
                     </div>
                 </div>
             </div>
