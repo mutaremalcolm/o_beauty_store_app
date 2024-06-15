@@ -2,13 +2,16 @@
 
 import { useCart } from '../contexts/cartContext';
 import Image from 'next/image';
+import { ShoppingBag } from 'lucide-react';
 
 const Cart = () => {
     const { cart } = useCart();
 
     return (
         <div className="cart">
-            <h2 className="section-title">Shopping Cart</h2>
+            <h2 className="section-title">
+                <ShoppingBag/>
+            </h2>
             <ul>
                 {cart.map((item, index) => (
                     <li key={index} className="cart-item">
