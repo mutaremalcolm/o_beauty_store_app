@@ -5,9 +5,11 @@ import { Button } from "./ui/button";
 import Socials from "./Socials.jsx";
 import { RiArrowDownSLine } from "react-icons/ri";
 import { Contact, ShoppingBag } from "lucide-react";
+import Header from "./Header";
 
 const Hero = ({theme}) => {
   return (
+    <>
     <section
       id="home"
       className="py-12 xl:py-24 h-[84vh] xl:pt-28 mb-10 relative bg-cover bg-center"
@@ -44,6 +46,7 @@ const Hero = ({theme}) => {
         <RiArrowDownSLine className="text-3xl text-primary" />
       </div>
     </section>
+    </>
   );
 }
 

@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 340 100% 93%; /* Set to pink */
+    --background: 340 100% 93%; /* Adjust this if needed */
     --foreground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -27,7 +27,7 @@
   }
 
   .dark {
-    --background: 340 100% 93%; /* Set to pink */
+    --background: 340 100% 93%; /* Adjust this if needed */
     --foreground: 0 0% 95%;
     --card: 24 9.8% 10%;
     --card-foreground: 0 0% 95%;
@@ -90,6 +90,3 @@
     @apply bg-primary;
   }
 }
-
-
-
